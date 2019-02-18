@@ -1,0 +1,13 @@
+.header {
+  background-color: green;
+}
+
+.body {
+  background-image: url('img/chess.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%
+}
+
+.chessboards {
+  float: right;
+}
