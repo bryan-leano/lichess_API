@@ -18,8 +18,9 @@ function getMyGame() {
     baseURL: 'https://lichess.org/',
     headers: { 'Authorization': 'Bearer ' + personalToken }})
   .then(function (res) {
-    console.log(res.data.nowPlaying[0].gameId);
-    
+    let gameId = res.data.nowPlaying[0].gameId;
+    let script = document.getElementById('nowPlaying');
+    script.src = `https://lichess.org/embed/${gameId}?theme=auto&bg=auto`;
   })
   .catch(function (error) {
     alert(error);
