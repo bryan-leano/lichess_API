@@ -1,5 +1,8 @@
 const personalToken = 'CrLIGIURwChO71pi';
 
+
+
+
 function getUserData(user) {
   axios.get(`https://lichess.org/api/user/${user}`)
   .then(function (response) {
@@ -10,7 +13,6 @@ function getUserData(user) {
   });
 }
 
-getUserData('breaker90');
 
 
 function getMyGame() {
@@ -22,8 +24,8 @@ function getMyGame() {
     let script = document.getElementById('nowPlaying');
     script.src = `https://lichess.org/embed/${gameId}?theme=auto&bg=auto`;
   })
-  .catch(function (error) {
-    alert(error);
+  .catch(function (err) {
+    alert(err);
   })
 }
 
