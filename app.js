@@ -1,6 +1,6 @@
 const personalToken = 'CrLIGIURwChO71pi';
 
-//getMyGame();
+getMyGame();
 
 
 function getUserData(user) {
@@ -54,4 +54,3 @@ function getMyGame() {
     alert(err);
   })
 }
-
